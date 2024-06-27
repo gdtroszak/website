@@ -2,7 +2,7 @@
 title: on documentation
 ---
 
-*accurate >= none > wrong*
+**accurate >= none > wrong**
 
 - Accurate documentation saves work.
 - No documentation indicates that you'll need to put the work in to understand. 
