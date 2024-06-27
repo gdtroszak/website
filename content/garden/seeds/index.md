@@ -1,3 +1,7 @@
+---
+title: seeds
+---
+
 ## seeds
 
 seeds of thought to be organized. 
