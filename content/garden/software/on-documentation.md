@@ -3,6 +3,8 @@ title: on documentation
 meta_description: "my thoughts on documenting code. and possibly other things."
 ---
 
+# on documentation
+
 **accurate >= none > wrong**
 
 - Accurate documentation saves work.
