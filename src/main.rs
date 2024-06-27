@@ -75,6 +75,11 @@ fn markdown_to_html(markdown_input: &str) -> Result<String, Box<dyn std::error::
                 title,
                 id,
             }) => {
+                let dest_url = if dest_url.starts_with("/content") {
+                    dest_url.replace("/content", "")
+                } else {
+                    dest_url.to_string()
+                };
                 let new_dest = if dest_url.ends_with(".md") {
                     if dest_url.ends_with("./index.md") {
                         "/".to_string()
@@ -164,12 +169,7 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let relative_path = entry.path().strip_prefix("content")?.with_extension("html");
             let output_path = site_dir.join(&relative_path);
 
-            let parent_dir_depth = relative_path.ancestors().count() - 2;
-            let relative_nav_path = "../".repeat(parent_dir_depth);
-            let adjusted_nav_html = adjust_nav_paths(&nav_html, &relative_nav_path);
-
-            let final_html =
-                render_template(&title, &description, &style, &adjusted_nav_html, &html)?;
+            let final_html = render_template(&title, &description, &style, &nav_html, &html)?;
 
             if let Some(parent) = output_path.parent() {
                 fs::create_dir_all(parent)?;
@@ -187,19 +187,4 @@ fn copy_directory(from: &Path, to: &Path) -> Result<(), Box<dyn std::error::Erro
     options.content_only = true;
     dir::copy(from, to, &options)?;
     Ok(())
-}
-
-fn adjust_nav_paths(nav_html: &str, relative_path: &str) -> String {
-    let mut adjusted_html = nav_html.to_string();
-
-    // Regex to find all markdown links and adjust paths
-    let re = regex::Regex::new(r#"href="\./([^"]+)"#).unwrap();
-    adjusted_html = re
-        .replace_all(
-            &adjusted_html,
-            format!(r#"href="{}$1"#, relative_path).as_str(),
-        )
-        .to_string();
-
-    adjusted_html
 }
