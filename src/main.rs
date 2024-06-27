@@ -1,5 +1,9 @@
-use std::{fs, path::Path};
+use std::{
+    fs::{self},
+    path::Path,
+};
 
+use fs_extra::dir::{self, CopyOptions};
 use handlebars::Handlebars;
 use pulldown_cmark::{html::push_html, CowStr, Event, Options, Parser, Tag};
 use walkdir::WalkDir;
@@ -61,15 +65,28 @@ fn render_template(
 }
 
 fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
+    let content_dir = Path::new("content");
     let site_dir = Path::new("_site");
-    ensure_directory_exists(site_dir)?;
 
-    let nav_path = Path::new("content/nav.md");
-    let nav_md = fs::read_to_string(nav_path)?;
-    let nav_html = markdown_to_html(&nav_md)?;
+    if site_dir.exists() {
+        fs::remove_dir_all(&site_dir)?;
+    }
+    fs::create_dir_all(&site_dir)?;
 
-    for entry in WalkDir::new("content")
+    // Copy static assets from content/static to site/static
+    let static_dir = content_dir.join("static");
+    let output_static_dir = site_dir.join("static");
+    if static_dir.exists() {
+        fs::create_dir_all(&output_static_dir)?;
+        copy_directory(&static_dir, &output_static_dir)?;
+    }
+
+    let nav_path = content_dir.join("nav.md");
+    let nav_html = markdown_to_html(&fs::read_to_string(nav_path)?)?;
+
+    for entry in WalkDir::new(&content_dir)
         .into_iter()
+        .filter_entry(|e| !e.path().starts_with(&static_dir))
         .filter_map(|e| e.ok())
         .filter(|e| e.file_name().to_str() != Some("nav.md"))
     {
@@ -88,12 +105,20 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let final_html = render_template(title, &adjusted_nav_html, &html)?;
 
             if let Some(parent) = output_path.parent() {
-                ensure_directory_exists(parent)?; // Ensure each parent directory exists
+                fs::create_dir_all(parent)?;
             }
             fs::write(output_path, final_html)?;
         }
     }
 
+    Ok(())
+}
+
+fn copy_directory(from: &Path, to: &Path) -> Result<(), Box<dyn std::error::Error>> {
+    let mut options = CopyOptions::new();
+    options.overwrite = true;
+    options.content_only = true;
+    dir::copy(from, to, &options)?;
     Ok(())
 }
 
@@ -110,11 +135,4 @@ fn adjust_nav_paths(nav_html: &str, relative_path: &str) -> String {
         .to_string();
 
     adjusted_html
-}
-
-fn ensure_directory_exists(path: &Path) -> Result<(), std::io::Error> {
-    if !path.exists() {
-        fs::create_dir_all(path)?; // Creates the directory and all necessary parent directories
-    }
-    Ok(())
 }
