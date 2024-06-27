@@ -81,6 +81,7 @@ fn markdown_to_html(markdown_input: &str) -> Result<String, Box<dyn std::error::
 
 fn render_template(
     title: &str,
+    style: &str,
     nav: &str,
     content: &str,
 ) -> Result<String, handlebars::RenderError> {
@@ -89,6 +90,7 @@ fn render_template(
 
     let data = serde_json::json!({
         "title": title,
+        "style": style,
         "nav": nav,
         "content": content
     });
@@ -113,6 +115,11 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
         copy_directory(&static_dir, &output_static_dir)?;
     }
 
+    // Load the style
+    let style_path = Path::new("style.css");
+    let style = fs::read_to_string(&style_path)?;
+
+    // Generate html for navigation
     let nav_path = content_dir.join("nav.md");
     let nav_html = markdown_to_html(&fs::read_to_string(nav_path)?)?;
 
@@ -134,7 +141,7 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let relative_nav_path = "../".repeat(parent_dir_depth);
             let adjusted_nav_html = adjust_nav_paths(&nav_html, &relative_nav_path);
 
-            let final_html = render_template(&title, &adjusted_nav_html, &html)?;
+            let final_html = render_template(&title, &style, &adjusted_nav_html, &html)?;
 
             if let Some(parent) = output_path.parent() {
                 fs::create_dir_all(parent)?;
