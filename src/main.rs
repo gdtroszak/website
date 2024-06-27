@@ -6,10 +6,42 @@ use std::{
 use fs_extra::dir::{self, CopyOptions};
 use handlebars::Handlebars;
 use pulldown_cmark::{html::push_html, CowStr, Event, Options, Parser, Tag};
+use serde_json::Value;
 use walkdir::WalkDir;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     generate_site()
+}
+
+fn extract_front_matter(content: &str) -> Result<(String, String), Box<dyn std::error::Error>> {
+    // Check if the content starts with front matter delimiters
+    if content.starts_with("---") {
+        let parts: Vec<&str> = content.splitn(3, "---").collect();
+
+        if parts.len() == 3 {
+            // Parse the YAML front matter
+            let front_matter_str = parts[1];
+            let rest_content = parts[2];
+
+            let front_matter: Value = serde_yaml::from_str(front_matter_str)
+                .map_err(|e| format!("Failed to parse YAML front matter: {}", e))?;
+
+            // Extract title from front matter, default to "greg troszak" if not present
+            let title = front_matter
+                .get("title")
+                .and_then(Value::as_str)
+                .unwrap_or("greg troszak")
+                .to_string();
+
+            Ok((title, rest_content.trim_start().to_string()))
+        } else {
+            // Handle content without front matter or improperly formatted front matter
+            Ok(("greg troszak".to_string(), content.to_string()))
+        }
+    } else {
+        // Handle content without front matter
+        Ok(("greg troszak".to_string(), content.to_string()))
+    }
 }
 
 fn markdown_to_html(markdown_input: &str) -> Result<String, Box<dyn std::error::Error>> {
@@ -92,8 +124,8 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
     {
         if entry.file_type().is_file() && entry.path().extension().map_or(false, |e| e == "md") {
             let md = fs::read_to_string(entry.path())?;
-            let html = markdown_to_html(&md)?;
-            let title = entry.path().file_stem().unwrap().to_str().unwrap();
+            let (title, md_content) = extract_front_matter(&md)?;
+            let html = markdown_to_html(&md_content)?;
 
             let relative_path = entry.path().strip_prefix("content")?.with_extension("html");
             let output_path = site_dir.join(&relative_path);
@@ -102,7 +134,7 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let relative_nav_path = "../".repeat(parent_dir_depth);
             let adjusted_nav_html = adjust_nav_paths(&nav_html, &relative_nav_path);
 
-            let final_html = render_template(title, &adjusted_nav_html, &html)?;
+            let final_html = render_template(&title, &adjusted_nav_html, &html)?;
 
             if let Some(parent) = output_path.parent() {
                 fs::create_dir_all(parent)?;
