@@ -1,1 +1,3 @@
-A [link back home](../index.md).
+# digital garden
+
+For personal reference and thinking.

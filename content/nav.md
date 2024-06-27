@@ -1,2 +1,2 @@
-[Home](./index.md) |
-[Garden](./garden/index.md)
+[home](./index.md) |
+[garden](./garden/index.md)
