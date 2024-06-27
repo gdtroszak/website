@@ -191,9 +191,10 @@ fn adjust_nav_paths(nav_html: &str, relative_path: &str) -> String {
     adjusted_html = re
         .replace_all(
             &adjusted_html,
-            format!(r#"href="{}$1""#, relative_path).as_str(),
+            format!(r#"href="{}$1"#, relative_path).as_str(),
         )
         .to_string();
+    println!("{}", adjusted_html);
 
     adjusted_html
 }
