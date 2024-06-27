@@ -75,9 +75,7 @@ fn markdown_to_html(markdown_input: &str) -> Result<String, Box<dyn std::error::
                 title,
                 id,
             }) => {
-                let new_dest = if dest_url.ends_with("/index.md") {
-                    dest_url.replace("/index.md", "")
-                } else if dest_url.ends_with(".md") {
+                let new_dest = if dest_url.ends_with(".md") {
                     dest_url.replace(".md", ".html")
                 } else {
                     dest_url.to_string()
@@ -196,6 +194,7 @@ fn adjust_nav_paths(nav_html: &str, relative_path: &str) -> String {
             format!(r#"href="{}$1"#, relative_path).as_str(),
         )
         .to_string();
+    println!("{}", adjusted_html);
 
     adjusted_html
 }
