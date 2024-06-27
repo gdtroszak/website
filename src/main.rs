@@ -61,7 +61,7 @@ fn render_template(
 }
 
 fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
-    let site_dir = Path::new("site");
+    let site_dir = Path::new("_site");
     ensure_directory_exists(site_dir)?;
 
     let nav_path = Path::new("content/nav.md");
@@ -81,7 +81,7 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let relative_path = entry.path().strip_prefix("content")?.with_extension("html");
             let output_path = site_dir.join(&relative_path);
 
-            let parent_dir_depth = relative_path.ancestors().count() - 2; // excluding 'site/' and the file itself
+            let parent_dir_depth = relative_path.ancestors().count() - 2;
             let relative_nav_path = "../".repeat(parent_dir_depth);
             let adjusted_nav_html = adjust_nav_paths(&nav_html, &relative_nav_path);
 
