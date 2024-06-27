@@ -1,5 +1,6 @@
 ---
 title: on documentation
+meta_description: "my thoughts on documenting code. and possibly other things."
 ---
 
 **accurate >= none > wrong**

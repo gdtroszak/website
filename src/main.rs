@@ -13,7 +13,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     generate_site()
 }
 
-fn extract_front_matter(content: &str) -> Result<(String, String), Box<dyn std::error::Error>> {
+fn extract_front_matter(
+    content: &str,
+) -> Result<(String, String, String), Box<dyn std::error::Error>> {
     // Check if the content starts with front matter delimiters
     if content.starts_with("---") {
         let parts: Vec<&str> = content.splitn(3, "---").collect();
@@ -32,15 +34,32 @@ fn extract_front_matter(content: &str) -> Result<(String, String), Box<dyn std::
                 .and_then(Value::as_str)
                 .unwrap_or("greg troszak")
                 .to_string();
+            let meta_description = front_matter
+                .get("meta_description")
+                .and_then(Value::as_str)
+                .unwrap_or("")
+                .to_string();
 
-            Ok((title, rest_content.trim_start().to_string()))
+            Ok((
+                title,
+                meta_description,
+                rest_content.trim_start().to_string(),
+            ))
         } else {
             // Handle content without front matter or improperly formatted front matter
-            Ok(("greg troszak".to_string(), content.to_string()))
+            Ok((
+                "greg troszak".to_string(),
+                "".to_string(),
+                content.to_string(),
+            ))
         }
     } else {
         // Handle content without front matter
-        Ok(("greg troszak".to_string(), content.to_string()))
+        Ok((
+            "greg troszak".to_string(),
+            "".to_string(),
+            content.to_string(),
+        ))
     }
 }
 
@@ -81,6 +100,7 @@ fn markdown_to_html(markdown_input: &str) -> Result<String, Box<dyn std::error::
 
 fn render_template(
     title: &str,
+    description: &str,
     style: &str,
     nav: &str,
     content: &str,
@@ -90,6 +110,7 @@ fn render_template(
 
     let data = serde_json::json!({
         "title": title,
+        "description": description,
         "style": style,
         "nav": nav,
         "content": content
@@ -131,7 +152,7 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
     {
         if entry.file_type().is_file() && entry.path().extension().map_or(false, |e| e == "md") {
             let md = fs::read_to_string(entry.path())?;
-            let (title, md_content) = extract_front_matter(&md)?;
+            let (title, description, md_content) = extract_front_matter(&md)?;
             let html = markdown_to_html(&md_content)?;
 
             let relative_path = entry.path().strip_prefix("content")?.with_extension("html");
@@ -141,7 +162,8 @@ fn generate_site() -> Result<(), Box<dyn std::error::Error>> {
             let relative_nav_path = "../".repeat(parent_dir_depth);
             let adjusted_nav_html = adjust_nav_paths(&nav_html, &relative_nav_path);
 
-            let final_html = render_template(&title, &style, &adjusted_nav_html, &html)?;
+            let final_html =
+                render_template(&title, &description, &style, &adjusted_nav_html, &html)?;
 
             if let Some(parent) = output_path.parent() {
                 fs::create_dir_all(parent)?;

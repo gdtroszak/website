@@ -1,5 +1,6 @@
 ---
 title: seeds
+meta_description: "seeds of thought to be organized"
 ---
 
 ## seeds
