@@ -11,9 +11,6 @@ For personal reference and thinking.
 
 - [bib ranking](/content/garden/cycling/bib-ranking.md)
 
-## personal reference
-
-- [sites to revisit](/content/garden/pr/sites-to-revisit.md)
 
 ## software
 
@@ -25,3 +22,4 @@ Seeds of thought to be organized.
 
 - [curation](/content/garden/seeds/curation.md)
 - [public thinking](/content/garden/seeds/public-thinking.md)
+- [sites to revisit](/content/garden/seeds/sites-to-revisit.md)
