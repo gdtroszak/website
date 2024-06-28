@@ -8,5 +8,5 @@ meta_description: "my digital garden for reference and thinking."
 For personal reference and thinking.
 
 - [cycling](/content/garden/cycling/index.md)
-- [seeds](/content/garden/seeds/index.md)
 - [software](/content/garden/software/index.md)
+- [seeds](/content/garden/seeds/index.md)
