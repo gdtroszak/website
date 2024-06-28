@@ -1,2 +1,1 @@
-[home](/content/index.md) |
-[garden](/content/garden/index.md)
+[home](/content/index.md)
