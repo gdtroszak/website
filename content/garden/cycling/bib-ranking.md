@@ -1,5 +1,6 @@
 ---
 title: bib ranking
+date: 2024.06.27
 meta_description: "ranking of cycling bibs"
 ---
 

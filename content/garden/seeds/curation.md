@@ -1,5 +1,6 @@
 ---
 title: "curation"
+date: 2024.06.27
 meta_description: "curation is tremendously valuable"
 ---
 

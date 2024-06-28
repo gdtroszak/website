@@ -1,5 +1,6 @@
 ---
 title: on documentation
+date: 2024.06.27
 meta_description: "my thoughts on documenting code. and possibly other things."
 ---
 
