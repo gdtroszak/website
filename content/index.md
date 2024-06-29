@@ -17,6 +17,9 @@ For personal reference and thinking.
 ## food
 ### bread
 
+- [guides](/content/food/bread/guides.md)
+- [recipes](/content/food/bread/recipes.md)
+
 ## software
 
 - [good articles](/content/software/articles.md)
