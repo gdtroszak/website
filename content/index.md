@@ -8,7 +8,7 @@ meta_description: "my digital garden for reference and thinking."
 For personal reference and thinking.
 
 [reading list](/content/reading-list.md) |
-[sites to revisit](/content/seeds/sites-to-revisit.md)
+[sites to revisit](/content/sites-to-revisit.md)
 
 ## cycling
 
@@ -24,10 +24,3 @@ For personal reference and thinking.
 
 - [good articles](/content/software/articles.md)
 - [on documenation](/content/software/on-documentation.md)
-
-## seeds
-
-Seeds of thought to be organized. 
-
-- [curation](/content/seeds/curation.md)
-- [public thinking](/content/seeds/public-thinking.md)
