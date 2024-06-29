@@ -14,6 +14,11 @@ For personal reference and thinking.
 
 - [bib ranking](/content/cycling/bib-ranking.md)
 
+## food
+### bread
+
+- [guides](/content/food/bread/guides.md)
+- [recipes](/content/food/bread/recipes.md)
 
 ## software
 
