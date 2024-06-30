@@ -1,6 +1,6 @@
 ---
-title: "greg troszak"
-meta_description: "my digital garden for reference and thinking."
+title: greg troszak
+meta_description: my digital garden for reference and thinking.
 ---
 
 # digital garden
@@ -14,11 +14,9 @@ For personal reference and thinking.
 
 - [bib ranking](/content/cycling/bib-ranking.md)
 
-## food
-### bread
+## food/bread
 
-- [guides](/content/food/bread/guides.md)
-- [recipes](/content/food/bread/recipes.md)
+- [maintaining sourdough starter](/content/food/bread/guides/maintaining-sourdough-starter.md)
 
 ## software
 
