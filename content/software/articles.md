@@ -5,7 +5,7 @@ meta_description: good articles on software
 
 # software articles
 
-Articles and videos on softare that I like.
+Articles and videos on software that I like.
 
 - [Boundaries](https://www.destroyallsoftware.com/talks/boundaries)
 
