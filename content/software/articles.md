@@ -25,7 +25,7 @@ Articles and videos on software that I like.
   constructs for encoding state machines.
   
   **TL:DR** Have a generically typed state machine struct. Encode the states in
-  structs. Encode the allowed transitions between status using the `From` trait.
+  structs. Encode the allowed transitions between states using the `From` trait.
   For example,
 
   ```rust
