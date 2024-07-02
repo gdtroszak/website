@@ -5,5 +5,5 @@ meta_description: things I'd like to read
 
 # reading list
 
-- [ ] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [ ] [Hexagonal Architecture in Rust](https://alexis-lozano.com/hexagonal-architecture-in-rust-1/)
+- [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
