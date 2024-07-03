@@ -22,4 +22,5 @@ For personal reference and thinking.
 ## software
 
 - [good articles](/content/software/articles.md)
+- [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
 - [on documenation](/content/software/on-documentation.md)
