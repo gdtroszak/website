@@ -7,4 +7,4 @@ meta_description: seeds of thoughts and things
 
 - [curation](./curation.md)
 - [public thinking](./public-thinking.md)
-- [logical separation before process separation](./content/seeds/logical-separation-before-process-separation.md)
+- [logical separation before process separation](./logical-separation-before-process-separation.md)
