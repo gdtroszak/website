@@ -13,6 +13,7 @@ For personal reference and thinking.
 ## cycling
 
 - [bib ranking](/content/cycling/bib-ranking.md)
+- [rides](/content/cycling/rides.md)
 
 ## food/bread
 
