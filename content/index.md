@@ -5,7 +5,7 @@ meta_description: my digital garden for reference and thinking.
 
 # digital garden
 
-For personal reference and thinking.
+For personal reference and reflection.
 
 [reading list](/content/reading-list.md) |
 [sites to revisit](/content/sites-to-revisit.md)
