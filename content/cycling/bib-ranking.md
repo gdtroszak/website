@@ -1,6 +1,5 @@
 ---
 title: bib ranking
-date: 2024.06.27
 meta_description: "ranking of cycling bibs"
 ---
 
@@ -17,11 +16,10 @@ The bibs I reach for if going on a ride <= some distance. Based on how much I re
 ### 75 miles
 
 - [The Black Bibs Ultimate](https://theblackbibs.com/collections/mens-bibs/products/the-black-bibs-ultimate)
+- [Ornot Work Bib](https://www.ornotbike.com/products/work-bib-short-black)
 
 ### 100 miles
 
-- [Ornot Work Bib](https://www.ornotbike.com/products/work-bib-short-black)
+- [Velocio Signature Bib Short](https://velocio.cc/collections/mens-bibs-shorts-tights/products/mens-signature-bib-short?variant=40321423900745)
 
 ### 150 miles
-
-- I'm hoping the Velocio ones land here...
