@@ -19,7 +19,7 @@ meta_description: basic instructions for maintaining a sourdough starter
 2. Add the water and stir to dissolve it.
 3. Add the whole wheat flour and stir.
 4. Add the all-purpose flour and stir until completely mixed. This can take some effort.
-5. I like to wrap a rubber band around the container so I can see how much its risen.
+5. I like to wrap a rubber band around the container so I can see how much it's risen.
 
 ## notes
 
