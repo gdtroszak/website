@@ -8,6 +8,11 @@ meta_description: sites to come back to on occasion
 
 And the dates I last visited them.
 
+### 2024.07
+
+- [Coding Horror](https://blog.codinghorror.com/)
+- [Joel on Software](https://www.joelonsoftware.com/)
+
 ### 2024.06
 
 - [Joel Hooks](https://joelhooks.com/)
