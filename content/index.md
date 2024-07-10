@@ -1,6 +1,6 @@
 ---
 title: greg troszak
-meta_description: my digital garden for reference and thinking.
+meta_description: my digital garden for reference and reflection.
 ---
 
 # digital garden
