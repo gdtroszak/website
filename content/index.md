@@ -19,8 +19,12 @@ For personal reference and reflection.
 
 - [maintaining sourdough starter](/content/food/bread/guides/maintaining-sourdough-starter.md)
 
-## software
+## software/notes
 
 - [good articles](/content/software/articles.md)
+- [AWS lambda authorizer caching](/content/software/lambda-authorizer-caching.md)
+
+## software/thoughts
+
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
 - [on documenation](/content/software/on-documentation.md)
