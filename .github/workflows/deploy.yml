@@ -19,8 +19,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: build
-        run: ./bin/ssg ./content
+      - name: rust setup
+        uses: dtolnay/rust-toolchain@stable
+      - name: setup cache
+        uses: Swatinem/rust-cache@v2
+      - name: install dependencies
+        run: cargo install gdt-ssg
+      - name: build site
+        run: gdt-ssg ./content
       - name: setup pages
         uses: actions/configure-pages@v5
       - name: upload artifact
