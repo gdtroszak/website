@@ -20,7 +20,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: build
-        run: ./bin/ssh ./content
+        run: ./bin/ssg ./content
       - name: setup pages
         uses: actions/configure-pages@v5
       - name: upload artifact
