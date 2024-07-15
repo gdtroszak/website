@@ -19,12 +19,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: rust setup
-        uses: dtolnay/rust-toolchain@stable
-      - name: setup cache
-        uses: Swatinem/rust-cache@v2
       - name: build
-        run: cargo run
+        run: ./bin/ssh ./content
       - name: setup pages
         uses: actions/configure-pages@v5
       - name: upload artifact

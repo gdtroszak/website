@@ -27,4 +27,4 @@ For personal reference and reflection.
 ## software/thoughts
 
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
-- [on documenation](/content/software/on-documentation.md)
+- [on documentation](/content/software/on-documentation.md)
