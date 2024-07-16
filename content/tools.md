@@ -3,7 +3,7 @@ title: tools
 meta_description: tools I've found useful
 ---
 
-## tools
+# tools
 
 - [tree.nathanfriend.io](https://tree.nathanfriend.io/)
 
