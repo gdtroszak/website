@@ -8,7 +8,8 @@ meta_description: my digital garden for reference and reflection.
 For personal reference and reflection.
 
 [reading list](/content/reading-list.md) |
-[sites to revisit](/content/sites-to-revisit.md)
+[sites to revisit](/content/sites-to-revisit.md) |
+[tools](/content/tools.md)
 
 ## cycling
 

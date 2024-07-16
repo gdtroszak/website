@@ -1,1 +1,0 @@
-[home](/content/index.md)
