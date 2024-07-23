@@ -19,20 +19,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: rust setup
-        uses: dtolnay/rust-toolchain@stable
-      - name: setup cache
-        uses: Swatinem/rust-cache@v2
-      - name: install dependencies
-        run: cargo install cliche
-      - name: build site
-        run: cliche ./content
+      - name: build site and upload artifact
+        uses: gdtroszak/cliche-action@v1
       - name: setup pages
         uses: actions/configure-pages@v5
-      - name: upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './_site'
       - name: deploy to gh pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: cliche-site
