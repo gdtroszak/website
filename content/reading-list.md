@@ -18,6 +18,7 @@ meta_description: things I'd like to read
 
 ## books
 
+- [ ] [Architecture Patterns in Python](https://www.cosmicpython.com/book/preface.html)
 - [ ] [The Design of Everyday Things](https://a.co/d/09LvFuBc)
 - [ ] [Don't Make Me Think](https://a.co/d/09sWIS2h)
 - [ ] [Code Complete](https://a.co/d/05DbKdJW)
