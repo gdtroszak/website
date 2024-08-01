@@ -8,3 +8,5 @@ meta_description: tools I've found useful
 - [tree.nathanfriend.io](https://tree.nathanfriend.io/)
 
   Easily generate ASCII folder structure diagrams.
+
+- [epoch converter](https://www.epochconverter.com/)
