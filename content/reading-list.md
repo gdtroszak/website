@@ -12,6 +12,7 @@ meta_description: things I'd like to read
 - [ ] [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 - [ ] [Statecharts](https://statecharts.dev/)
 - [ ] [HTML Elements Standard](https://html.spec.whatwg.org/multipage/dom.html#elements)
+- [ ] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
 - [x] [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)

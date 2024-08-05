@@ -1,12 +1,15 @@
 ---
 title: sites to revisit
-date: 2024.06.27
 meta_description: sites to come back to on occasion
 ---
 
 # sites to revisit
 
 And the dates I last visited them.
+
+### 2024.080
+
+- [Dan McKinley](https://mcfunley.com/)
 
 ### 2024.07
 

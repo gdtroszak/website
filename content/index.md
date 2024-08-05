@@ -16,16 +16,12 @@ For personal reference and reflection.
 - [bib ranking](/content/cycling/bib-ranking.md)
 - [rides](/content/cycling/rides.md)
 
-## food/bread
+## food
 
-- [maintaining sourdough starter](/content/food/bread/guides/maintaining-sourdough-starter.md)
+- [maintaining sourdough starter](/content/food/maintaining-sourdough-starter.md)
 
-## software/notes
-
+## software
 - [good articles](/content/software/articles.md)
 - [AWS lambda authorizer caching](/content/software/lambda-authorizer-caching.md)
-
-## software/thoughts
-
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
 - [on documentation](/content/software/on-documentation.md)
