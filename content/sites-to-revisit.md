@@ -7,7 +7,7 @@ meta_description: sites to come back to on occasion
 
 And the dates I last visited them.
 
-### 2024.080
+### 2024.08
 
 - [Dan McKinley](https://mcfunley.com/)
 

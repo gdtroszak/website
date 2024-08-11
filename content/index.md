@@ -25,3 +25,4 @@ For personal reference and reflection.
 - [AWS lambda authorizer caching](/content/software/lambda-authorizer-caching.md)
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
 - [on documentation](/content/software/on-documentation.md)
+- [unit of work](/content/software/uow.md)
