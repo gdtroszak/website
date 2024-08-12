@@ -10,6 +10,7 @@ And the dates I last visited them.
 ### 2024.08
 
 - [Dan McKinley](https://mcfunley.com/)
+- [Brave New Geek](https://bravenewgeek.com/)
 
 ### 2024.07
 
