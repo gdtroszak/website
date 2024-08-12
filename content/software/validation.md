@@ -10,7 +10,7 @@ There are a few different forms of validation:
 - Semantic
 - Pragmatic
 
-Syntactic validation ensures that you are receiving input that is well-formed.
+**Syntactic** validation ensures that you are receiving input that is well-formed.
 If I have a function that takes a name and prints `Hello ${name}`, `name` better
 be a string (or something that can be coerced into a string).
 
@@ -24,7 +24,7 @@ def say_hello(name):
 say_hello(123)
 ```
 
-Semantic validation ensures that input has meaning. Suppose our program is rude
+**Semantic** validation ensures that input has meaning. Suppose our program is rude
 and only says hello to people we know. We'd need to check that we know them
 before saying hello and throw an error if we don't. If we don't know them, they
 are meaningless to our program (so rude).
@@ -45,7 +45,7 @@ def say_hello(name):
 say_hello("Dave")
 ```
 
-Pragmatic validation ensures that the input is appropriate and makes sense given
+**Pragmatic** validation ensures that the input is appropriate and makes sense given
 the current context or state of the application. Imagine our program is supposed
 to only greet people we know during business hours. If someone tries to greet
 outside these hours, we should reject the input even if it’s syntactically and
@@ -79,7 +79,7 @@ Ideally, you should try to keep your core logic focused, which means having
 all of this validation there would be awful. Instead, you should use the layers
 around your core logic to protect it from this cruft. In an ideal world:
 
-- Syntactic validation happens as close to the edge of your system as possible (think handlers).
-- Semantic validation happens in an orchestration layer (think services).
-- Pragmatic validation actually tends to be the rules your core logic is built
-  around, so that is exactly where it belongs (think domain model).
+- **Syntactic** validation happens as *close to the edge of your system* as possible (think handlers).
+- **Semantic** validation happens in an *orchestration layer* (think services).
+- **Pragmatic** validation actually *tends to be the rules your core logic is built
+  around, so that is exactly where it belongs* (think domain model).
