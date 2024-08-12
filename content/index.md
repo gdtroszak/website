@@ -22,6 +22,7 @@ For personal reference and reflection.
 
 ## software
 - [good articles](/content/software/articles.md)
+- [validation](/content/software/validation.md)
 - [AWS lambda authorizer caching](/content/software/lambda-authorizer-caching.md)
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
 - [on documentation](/content/software/on-documentation.md)
