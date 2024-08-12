@@ -28,3 +28,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: cliche-site
+          domain: https://www.gregtroszak.me
