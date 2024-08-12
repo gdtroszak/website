@@ -16,6 +16,7 @@ meta_description: things I'd like to read
 - [ ] [You Cannot Have Exactly-Once Delivery](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
 - [ ] [No assembly required: the benefits of an opinionated platform](https://bravenewgeek.com/no-assembly-required-the-benefits-of-an-opinionated-platform/)
 - [ ] [Security, Maintainability, Velocity: Choose One](https://bravenewgeek.com/security-maintainability-velocity-choose-one/)
+- [ ] [How To Ensure Idempotency In An Eventual Consistent DDD/CQRS Application](https://blog.sapiensworks.com/post/2015/08/26/How-To-Ensure-Idempotency)
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
 - [x] [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)

@@ -2,7 +2,7 @@
 title: validation
 ---
 
-# Validation
+# validation
 
 There are a few different forms of validation:
 
@@ -73,7 +73,7 @@ def say_hello(name):
 say_hello("Alice")
 ```
 
-## Where to validate?
+## where to validate?
 
 Ideally, you should try to keep your core logic focused, which means having
 all of this validation there would be awful. Instead, you should use the layers
