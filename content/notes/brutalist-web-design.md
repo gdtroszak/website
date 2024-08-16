@@ -2,7 +2,8 @@
 title: notes on Guidelines for Brutalist Web Design
 ---
 
-# notes on [Guidelines for Brutalist Web Design](https://brutalist-web.design/)
+# Guidelines for Brutalist Web Design
+
 - A website's materials are its content and the context in which it's consumed.
 - A website that embraces Brutalist Web Design is raw in its focus on content,
   and prioritization of the website visitor.
