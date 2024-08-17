@@ -20,7 +20,7 @@ meta_description: things I'd like to read
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
 - [x] [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
-- [x] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)([notes](/content/notes/choose-boring-technology.md))
+- [x] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) ([notes](/content/notes/choose-boring-technology.md))
 
 ## books
 
