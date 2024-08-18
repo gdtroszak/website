@@ -7,7 +7,6 @@ meta_description: things I'd like to read
 
 ## articles
 
-- [ ] [Hexagonal Architecture in Rust](https://alexis-lozano.com/hexagonal-architecture-in-rust-1/)
 - [ ] [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 - [ ] [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 - [ ] [Statecharts](https://statecharts.dev/)
@@ -21,6 +20,7 @@ meta_description: things I'd like to read
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
 - [x] [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - [x] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) ([notes](/content/notes/choose-boring-technology.md))
+- [x] [Hexagonal Architecture in Rust](https://alexis-lozano.com/hexagonal-architecture-in-rust-1/)
 
 ## books
 
