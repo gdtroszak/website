@@ -24,8 +24,11 @@ meta_description: things I'd like to read
 
 ## books
 
+- [ ] [The Paradox of Choice](https://a.co/d/98ING7q)
 - [ ] [The Design of Everyday Things](https://a.co/d/09LvFuBc)
 - [ ] [Don't Make Me Think](https://a.co/d/09sWIS2h)
 - [ ] [Code Complete](https://a.co/d/05DbKdJW)
 - [ ] [The Mythical Man Month](https://a.co/d/0alLUZMX)
+- [ ] [The Denial of Death](https://a.co/d/1FidorA)
+- [ ] [The Second Mountain](https://a.co/d/iG5Z7hS)
 - [x] [Architecture Patterns in Python](https://www.cosmicpython.com/book/preface.html)
