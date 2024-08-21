@@ -18,6 +18,12 @@ Articles and videos on software that I like.
   concepts outlined in
   [Boundaries](https://www.destroyallsoftware.com/talks/boundaries).
 
+- [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) ([notes](/content/notes/choose-boring-technology.md))
+
+  Start by using the technologies you know how to operate. If you're lucky
+  enough to make something useful, the ease of operating the thing should
+  outweigh the ease of building the thing.
+
 - [Pretty State Machine Patterns in Rust](https://hoverbear.org/blog/rust-state-machine-pattern/)
 
   I've found myself coming back to this article several times when working
@@ -53,13 +59,4 @@ Articles and videos on software that I like.
 
   // transition from state 3 to state 1.
   impl From<Machine<State3>> for Machine<State1> {}
-    
   ```
-
-- [Writing Python like it's Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
-
-  Rust forces you to write software in a (arguably) better way. This describes
-  some ways to make Python more Rust-like.
-  
-  **TL;DR** Use type hints in abundance and make illegal states unrepresentable
-  in your code.
