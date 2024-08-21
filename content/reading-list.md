@@ -8,7 +8,6 @@ meta_description: things I'd like to read
 ## articles
 
 - [ ] [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
-- [ ] [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 - [ ] [Statecharts](https://statecharts.dev/)
 - [ ] [HTML Elements Standard](https://html.spec.whatwg.org/multipage/dom.html#elements)
 - [ ] [You Cannot Have Exactly-Once Delivery](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
@@ -22,6 +21,7 @@ meta_description: things I'd like to read
 - [x] [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - [x] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) ([notes](/content/notes/choose-boring-technology.md))
 - [x] [Hexagonal Architecture in Rust](https://alexis-lozano.com/hexagonal-architecture-in-rust-1/)
+- [x] [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/) ([notes](/content/notes/things-you-should-never-do-part1.md))
 
 ## books
 
