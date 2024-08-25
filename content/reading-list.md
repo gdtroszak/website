@@ -15,6 +15,7 @@ meta_description: things I'd like to read
 - [ ] [Security, Maintainability, Velocity: Choose One](https://bravenewgeek.com/security-maintainability-velocity-choose-one/)
 - [ ] [How To Ensure Idempotency In An Eventual Consistent DDD/CQRS Application](https://blog.sapiensworks.com/post/2015/08/26/How-To-Ensure-Idempotency)
 - [ ] [Stop inventing product problems; start solving customer problems](https://uxdesign.cc/stop-solving-product-problems-start-solving-customer-problems-6c9cf3e28db3)
+- [ ] [Fostering a culture that values stability and reliability](https://drewdevault.com/2021/01/04/A-culture-of-stability-and-reliability.html)
 - [x] [Writing Python like it's Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
