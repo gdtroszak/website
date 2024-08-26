@@ -9,6 +9,7 @@ And the dates I last visited them.
 
 ### 2024.08
 
+- [Herman Martinus](https://herman.bearblog.dev/)
 - [Dan McKinley](https://mcfunley.com/)
 - [Brave New Geek](https://bravenewgeek.com/)
 
@@ -21,4 +22,3 @@ And the dates I last visited them.
 
 - [Joel Hooks](https://joelhooks.com/)
 - [Chris Biscardi](https://www.christopherbiscardi.com/garden)
-- [Herman Martinus](https://herman.bearblog.dev/)
