@@ -29,3 +29,4 @@ For personal reference and reflection.
 - [on documentation](/content/software/on-documentation.md)
 - [unit of work](/content/software/uow.md)
 - [deployment vs. release](/content/software/deployment-vs-release.md)
+- [dumb reads](/content/software/dumb-reads.md)
