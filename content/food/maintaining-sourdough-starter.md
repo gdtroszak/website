@@ -7,10 +7,10 @@ meta_description: basic instructions for maintaining a sourdough starter
 
 ## ingredients
 
-- 1 part starter (20%)
-- 4 parts water (80%)
-- 1 part whole wheat flour (20%)
-- 4 parts all-purpose flour (80%)
+- 1 part starter
+- 4 parts water
+- 1 part whole wheat flour
+- 4 parts all-purpose flour
 
 ## steps
 
