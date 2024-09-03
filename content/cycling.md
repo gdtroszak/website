@@ -1,6 +1,5 @@
 ---
-title: rides
-meta_description: rides I'd like to do
+title: cycling
 ---
 
 # rides

@@ -3,26 +3,12 @@ title: greg troszak
 meta_description: my digital garden for reference and reflection.
 ---
 
-# digital garden
-
-For personal reference and reflection.
-
 [reading list](/content/reading-list.md) |
 [sites to revisit](/content/sites-to-revisit.md) |
 [tools](/content/tools.md)
 
-## cycling
-
-- [bib ranking](/content/cycling/bib-ranking.md)
-- [rides](/content/cycling/rides.md)
-
-## food
-
-- [maintaining sourdough starter](/content/food/maintaining-sourdough-starter.md)
-
-## software
-
 - [good articles](/content/software/articles.md)
+- [cycling](/content/cycling.md)
 - [validation](/content/software/validation.md)
 - [AWS lambda authorizer caching](/content/software/lambda-authorizer-caching.md)
 - [logical separation before process separation](/content/software/logical-separation-before-process-separation.md)
@@ -30,3 +16,4 @@ For personal reference and reflection.
 - [unit of work](/content/software/uow.md)
 - [deployment vs. release](/content/software/deployment-vs-release.md)
 - [dumb reads](/content/software/dumb-reads.md)
+- [maintaining sourdough starter](/content/food/maintaining-sourdough-starter.md)
