@@ -17,7 +17,7 @@ meta_description: things I'd like to read
 - [ ] [Stop inventing product problems; start solving customer problems](https://uxdesign.cc/stop-solving-product-problems-start-solving-customer-problems-6c9cf3e28db3)
 - [ ] [Fostering a culture that values stability and reliability](https://drewdevault.com/2021/01/04/A-culture-of-stability-and-reliability.html)
 - [ ] [nownownow](https://nownownow.com/about)
-- [ ] [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+- [ ] [The ABC of CBT](https://iveronicawalsh.wordpress.com/2012/04/15/the-abc-of-cbt-the-starter-exercisehandout-to-catch-your-negative-thoughts/)
 - [x] [Writing Python like it's Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
@@ -25,6 +25,7 @@ meta_description: things I'd like to read
 - [x] [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) ([notes](/content/notes/choose-boring-technology.md))
 - [x] [Hexagonal Architecture in Rust](https://alexis-lozano.com/hexagonal-architecture-in-rust-1/)
 - [x] [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/) ([notes](/content/notes/things-you-should-never-do-part1.md))
+- [x] [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 
 ## books
 
