@@ -1,12 +1,10 @@
 ---
 title: greg troszak
-meta_description: my digital garden for reference and reflection.
 ---
 
-[reading list](/content/reading-list.md) |
-[sites to revisit](/content/sites-to-revisit.md) |
-[tools](/content/tools.md)
-
+- [reading list](/content/reading-list.md)
+- [sites to revisit](/content/sites-to-revisit.md)
+- [tools](/content/tools.md)
 - [good articles](/content/software/articles.md)
 - [cycling](/content/cycling.md)
 - [validation](/content/software/validation.md)
