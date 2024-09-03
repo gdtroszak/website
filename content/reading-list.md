@@ -35,4 +35,5 @@ meta_description: things I'd like to read
 - [ ] [The Mythical Man Month](https://a.co/d/0alLUZMX)
 - [ ] [The Denial of Death](https://a.co/d/1FidorA)
 - [ ] [The Second Mountain](https://a.co/d/iG5Z7hS)
+- [ ] [The Startup of You](http://www.thestartupofyou.com/)
 - [x] [Architecture Patterns in Python](https://www.cosmicpython.com/book/preface.html)
