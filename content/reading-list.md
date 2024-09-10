@@ -18,6 +18,7 @@ meta_description: things I'd like to read
 - [ ] [Fostering a culture that values stability and reliability](https://drewdevault.com/2021/01/04/A-culture-of-stability-and-reliability.html)
 - [ ] [nownownow](https://nownownow.com/about)
 - [ ] [The ABC of CBT](https://iveronicawalsh.wordpress.com/2012/04/15/the-abc-of-cbt-the-starter-exercisehandout-to-catch-your-negative-thoughts/)
+- [ ] [Functional Domain Driven Design: Simplified](https://antman-does-software.com/functional-domain-driven-design-simplified)
 - [x] [Writing Python like it's Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
 - [x] [Making Illegal States Unrepresentable](https://ybogomolov.me/making-illegal-states-unrepresentable)
 - [x] [Brutalist Web Design](https://brutalist-web.design/) ([notes](/content/notes/brutalist-web-design.md))
