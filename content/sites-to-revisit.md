@@ -7,6 +7,10 @@ meta_description: sites to come back to on occasion
 
 And the dates I last visited them.
 
+### 2024.09
+
+- [Antman Writes Software](https://antman-does-software.com/)
+
 ### 2024.08
 
 - [Herman Martinus](https://herman.bearblog.dev/)
